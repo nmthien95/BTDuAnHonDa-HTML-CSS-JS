@@ -1,0 +1,139 @@
+@media screen and(max-width: 992px) {
+    #header {
+        .navbar {
+            a {
+                padding: $pd-2 $pd-2;
+            }
+            >a:first-child {
+                padding: 0;
+            }
+        }
+        #search-area {
+            padding: $pd-2 $pd-1;
+            input {
+                width: 80%;
+            }
+        }
+    }
+    #swiper__slider {
+        margin-top: $mg-4;
+        height: 700px;
+        .swiper-container {
+            height: 400px;
+            .swiper-wrapper {
+                height: 92%;
+            }
+        }
+    }
+    .intro {
+        .intro__container {
+            .intro__right {
+                background-image: url('../img/intro-2-xs.jpg');
+                .intro__right__content {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+    #our-vehicles {
+        h1 {
+            font-size: $font-size-5;
+        }
+        .carousel {
+            .carousel-caption-config {
+                width: 35%;
+                left: 7%;
+                top: 10%;
+                bottom: unset;
+                text-align: left;
+                font-size: $font-size-1 - 0.2;
+                .carousel-caption-detail {
+                    .carousel-detail-content {
+                        h2 {
+                            font-size: $font-size-3;
+                        }
+                        p {
+                            font-size: $font-size-1
+                        }
+                        ;
+                    }
+                }
+            }
+            .carousel-caption-footer {
+                width: 50%;
+                border: none;
+                bottom: 2%;
+                justify-content: center;
+            }
+            .carousel-control-prev {
+                left: 0rem;
+                i {
+                    font-size: $font-size-3;
+                    padding: $pd-2;
+                }
+            }
+            .carousel-control-next {
+                right: 0rem;
+                i {
+                    font-size: $font-size-3;
+                    padding: $pd-2;
+                }
+            }
+            .carousel-inner {
+                margin-top: 0;
+            }
+            .carousel-indicators-config {
+                width: 100% !important;
+            }
+        }
+    }
+    #search-filed {
+        padding: 0;
+        flex-wrap: wrap;
+        >div {
+            padding: $pd-1 $pd-2;
+            width: 75%;
+            input,
+            i,
+            input::placeholder {
+                font-size: $font-size-2;
+            }
+            input {
+                width: 65%;
+            }
+        }
+    }
+    #footer {
+        .footer__detail {
+            width: 25%;
+        }
+    }
+    #copy-right {
+        .copy-right__left {
+            p {
+                font-size: $font-size-1 - 0.2;
+            }
+        }
+        .copy-right__right {
+            ul {
+                justify-content: flex-end;
+                li {
+                    padding: 0 $pd-1;
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    a {
+                        font-size: $font-size-1 - 0.2;
+                    }
+                }
+            }
+        }
+        .copy-right__logo {
+            img {
+                max-width: 50%;
+                height: 30px;
+            }
+        }
+    }
+}

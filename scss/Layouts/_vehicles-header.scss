@@ -1,0 +1,138 @@
+.container-config {
+    padding: 0 $pd-7;
+}
+
+#vehicles {
+    background-color: $color-blue-overlay;
+    #vehicles__content {
+        // width: 80%;
+        // margin: auto;
+        position: relative;
+        .vehicles__nav {
+            background-color: $color-white;
+            text-align: center;
+            padding: $pd-3 0;
+            ul {
+                list-style: none;
+                li {
+                    display: inline;
+                    margin: 0;
+                    a {
+                        padding: $pd-1 $pd-4;
+                        font-weight: $font-weight-bold;
+                        color: $color-dark-blue-100;
+                        border-right: $border-2;
+                        font-size: $font-size-1;
+                        &:hover {
+                            color: $color-blue-200;
+                            text-decoration: none;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: $color-blue-200;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        #vehicle__list {
+            background-color: $color-grey;
+            padding: $pd-6;
+            padding-bottom: $pd-6 *2;
+            max-height: 700px;
+            .vehicle__title {
+                h1 {
+                    background-color: $color-grey;
+                    position: relative;
+                    top: $mg-up-2;
+                    padding: 0 $pd-1;
+                    color: $color-dark-blue-200;
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size-3;
+                    i {
+                        font-size: $font-size-3 * 0.5;
+                        position: relative;
+                        top: $mg-up-1;
+                    }
+                    span {
+                        font-weight: $font-weight-normal;
+                    }
+                }
+            }
+            .vehicle__product {
+                margin-bottom: $mg-3;
+                color: $color-dark-blue-200;
+                .vehicle__img {
+                    img:last-child {
+                        display: none;
+                    }
+                }
+                h2 {
+                    font-size: $font-size-2;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: $mg-1;
+                }
+                .vehicle__info {
+                    margin-bottom: $mg-2;
+                    h3 {
+                        font-weight: $font-weight-normal;
+                        font-size: $font-size-3;
+                    }
+                    p {
+                        font-size: $font-size-1;
+                        margin-bottom: $mg-1;
+                    }
+                }
+                &:hover {
+                    .vehicle__img {
+                        img {
+                            &:last-child {
+                                display: block;
+                            }
+                            &:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #vedicle__close {
+            background-color: $color-grey;
+            width: $vehicle-close-width;
+            padding: $pd-1 0;
+            text-align: center;
+            position: absolute;
+            left: 100% - $pd-7;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            cursor: pointer;
+            color: $color-blue-100;
+            &:hover {
+                color: $color-dark-blue-100;
+            }
+            .vehicle__circle {
+                width: $vehicle-circle-size;
+                height: $vehicle-circle-size;
+                border: 1px solid $color-blue-100;
+                border-radius: 50%;
+                line-height: $vehicle-circle-size;
+                text-align: center;
+                margin: auto;
+                i {
+                    font-size: $font-size-1;
+                }
+            }
+            p {
+                font-size: $font-size-1;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+}
+
+.hide-vehicle {
+    display: none;
+}
